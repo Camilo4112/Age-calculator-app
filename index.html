@@ -12,7 +12,10 @@
     <label for="birthDate">Fecha de Nacimiento:</label>
     <input type="date" id="birthDate">
     <button onclick="calculateAge()">Calcular Edad</button>
-    <div id="result" class="result"></div>
+    <div class="result-container">
+      <div id="result" class="result"></div>
+      <div id="meme" class="meme"><img src="" alt="Meme"></div> <!-- El src inicial está vacío -->
+    </div>
     <button id="newSearchBtn" onclick="resetForm()">Nueva Búsqueda</button> <!-- Botón oculto inicialmente -->
   </div>
 
