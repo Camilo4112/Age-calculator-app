@@ -51,18 +51,11 @@ function calculateAge() {
   } else if (years >= 34 && years <= 40) {
     memeImage.src = 'img/los_40.jpg'; // Cambia la ruta a la imagen correspondiente
   } else {
-    memeImage.src = 'img/fiesta.jpg'; // Si no se cumple ninguna condición, no mostrar ninguna imagen
+    memeImage.src = 'img/fiesta.jpg'; // Si no se cumple ninguna condición, mostrar la imagen de fiesta
   }
 
   // Mostrar el botón "Nueva Búsqueda" solo después de calcular la edad
   document.getElementById('newSearchBtn').style.display = 'block';
   // Mostrar la imagen del meme solo si hay una imagen seleccionada
   meme.style.display = memeImage.src ? 'block' : 'none';
-}
-
-function resetForm() {
-  document.getElementById('birthDate').value = ''; // Limpiar el campo de fecha
-  document.getElementById('result').innerHTML = ''; // Limpiar el resultado
-  document.getElementById('newSearchBtn').style.display = 'none'; // Ocultar el botón "Nueva Búsqueda" nuevamente
-  document.getElementById('meme').style.display = 'none'; // Ocultar la imagen del meme nuevamente
 }
